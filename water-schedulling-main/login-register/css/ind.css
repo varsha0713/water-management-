@@ -1,0 +1,62 @@
+/* Add this style in your user_schedules.css */
+
+body {
+    margin: 0; /* Remove default margin to fill the entire viewport */
+}
+
+.image-container {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Set z-index to -1 to place it behind the content */
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px; /* Adjusted max-width for the form */
+    margin: 0 auto; /* Center the form within the container */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Add margin between form groups */
+}
+
+/* Add this style for placing each form group on a new line */
+.form-group::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-group label,
+.form-group input {
+    float: left;
+}
+
+.form-btn {
+    text-align: center; /* Center the submit button within the form */
+}
+
+.form-btn input {
+    display: inline-block; /* Ensure the input is treated as a block element */
+}
